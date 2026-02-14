@@ -1,74 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel Landing</title>
+<title>Турагентство</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5efe6;
-  color: #5a5148;
+body{
+margin:0;
+font-family: Arial, sans-serif;
+background:#f5eee8;
+color:#4b3f36;
 }
 
-header {
-  background: #e8dccb;
-  padding: 20px;
-  text-align: center;
+header{
+background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
 }
 
-header h1 {
-  margin: 0;
+header h1{
+font-size:48px;
+margin-bottom:20px;
 }
 
-.hero {
-  padding: 60px 20px;
-  text-align: center;
-  background: #f1e7d8;
+header button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+background:#d6bfa7;
+color:white;
+border-radius:8px;
+cursor:pointer;
 }
 
-.hero h2 {
-  font-size: 32px;
+section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #d6c3a3;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
 }
 
-.section {
-  padding: 40px 20px;
-  text-align: center;
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+flex:1 1 200px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background: #fffaf3;
-  padding: 20px;
-  border-radius: 12px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-footer {
-  background: #e8dccb;
-  padding: 15px;
-  text-align: center;
-  font-size: 14px;
+footer{
+background:#d6bfa7;
+color:white;
+text-align:center;
+padding:30px;
 }
 </style>
 </head>
@@ -76,40 +72,39 @@ footer {
 <body>
 
 <header>
-  <h1>Travel Dream</h1>
+<h1>Подбор идеальных туров</h1>
+<p>Отдых мечты по лучшим ценам</p>
+<button>Подобрать тур</button>
 </header>
 
-<section class="hero">
-  <h2>Путешествуй красиво</h2>
-  <p>Лучшие туры по всему миру</p>
-  <a href="#" class="btn">Выбрать тур</a>
+<section>
+<h2>Популярные направления</h2>
+<div class="cards">
+<div class="card">Турция</div>
+<div class="card">Египет</div>
+<div class="card">ОАЭ</div>
+<div class="card">Таиланд</div>
+</div>
 </section>
 
-<section class="section">
-  <h2>Популярные направления</h2>
+<section>
+<h2>Почему выбирают нас</h2>
+<div class="cards">
+<div class="card">Лучшие цены</div>
+<div class="card">Проверенные отели</div>
+<div class="card">Поддержка 24/7</div>
+<div class="card">Индивидуальный подбор</div>
+</div>
+</section>
 
-  <div class="cards">
-
-    <div class="card">
-      <h3>Италия</h3>
-      <p>Рим, Венеция, Флоренция</p>
-    </div>
-
-    <div class="card">
-      <h3>Франция</h3>
-      <p>Париж и Лазурный берег</p>
-    </div>
-
-    <div class="card">
-      <h3>Турция</h3>
-      <p>Море и отдых всё включено</p>
-    </div>
-
-  </div>
+<section>
+<h2>Контакты</h2>
+<p>Телефон: +7 (999) 999-99-99</p>
+<p>WhatsApp / Telegram</p>
 </section>
 
 <footer>
-  © 2026 Travel Dream
+© 2026 Турагентство
 </footer>
 
 </body>
